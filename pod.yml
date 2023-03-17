@@ -1,0 +1,12 @@
+﻿apiVersion: v1
+kind: Pod
+metadata: 
+  name: utills-pod
+  labels:
+    app: web
+spec:
+  containers:
+    - name: web-ctr
+      image: saparay/textutils:0.0.1.RELEASE
+      ports:
+        - containerPort: 3000
